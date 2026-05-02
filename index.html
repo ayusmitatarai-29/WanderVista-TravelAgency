@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WanderVista</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+<nav class="navbar">
+
+
+<div class="logo">
+   <img src="logo travel.png" alt="WanderVista Logo">
+</div>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="#">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#plans">Plans</a></li>
+<li><a href="#desination">Destination</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<div class="menu-icon" id="menuIcon">
+<i class="fas fa-bars"></i>
+</div>
+
+</nav>
+</header>
+<!----------------hero section------------------->
+
+
+<section class="hero" id="home">
+
+    <!-- Slider Background Images -->
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600');"></div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?w=1600');"></div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1600');"></div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=1600');"></div>
+
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="hero-content">
+        <span class="tagline">Premium Travel Experience</span>
+        <h1>Discover The Beauty Of The World</h1>
+        <p>
+            Luxury vacations, beach escapes, mountain adventures and city tours
+            crafted for unforgettable memories.
+        </p>
+
+        <div class="hero-info">
+
+            <div class="info-box">
+                <h3>100+</h3>
+                <span>Destinations</span>
+            </div>
+
+            <div class="info-box">
+                <h3>5K+</h3>
+                <span>Happy Travelers</span>
+            </div>
+
+            <div class="info-box">
+                <h3>24/7</h3>
+                <span>Support</span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="slider-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+</section>
+
+
+
+<!-- About Section -->
+<section class="about" id="about">
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900" alt="Travel">
+        </div>
+
+        <div class="about-text">
+            <h2>About Our Website</h2>
+            <p>
+                Welcome to WanderVista, your trusted travel partner for discovering
+                beautiful destinations around the world. We provide affordable,
+                luxury and customized tour packages with the best offers.
+            </p>
+
+            <p>
+                Whether you dream of beaches, mountains, city adventures or
+                romantic getaways, we make your journey unforgettable with
+                comfort and style.
+            </p>
+
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Popular Plans Section -->
+<section class="plans" id="plans">
+
+    <div class="section-title">
+        <h2>Popular Travel Plans</h2>
+        <p>Best offers & recommended destinations</p>
+    </div>
+
+    <div class="plan-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="">
+            <div class="card-content">
+                <h3>Bali Beach</h3>
+                <p>3 Days / 2 Nights</p>
+                <span>$299</span>
+                <a href="#" class="btn-small">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="">
+            <div class="card-content">
+                <h3>Paris Tour</h3>
+                <p>5 Days / 4 Nights</p>
+                <span>$499</span>
+                <a href="#" class="btn-small">Book Now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=800" alt="">
+            <div class="card-content">
+                <h3>Swiss Mountains</h3>
+                <p>4 Days / 3 Nights</p>
+                <span>$399</span>
+                <a href="#" class="btn-small">Book Now</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DESTINATION SECTION -->
+<section class="destinations" id="destination">
+
+  <div class="section-title">
+    <h2>Top Destinations</h2>
+    <p>Choose your dream place and explore packages</p>
+  </div>
+
+  <div class="destination-container">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900" alt="">
+      <div class="card-content">
+        <h3>Bali</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Bali','$299','Round Trip Included','3 Star Hotel / 3 Nights')">View Plans</button>
+          <button onclick="openBooking('Bali')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=900" alt="">
+      <div class="card-content">
+        <h3>Thailand</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Thailand','$350','Flights Included','Beach Resort / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Thailand')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=900" alt="">
+      <div class="card-content">
+        <h3>New York</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('New York','$799','Flight Included','Luxury Hotel / 5 Nights')">View Plans</button>
+          <button onclick="openBooking('New York')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900" alt="">
+      <div class="card-content">
+        <h3>London</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('London','$699','Flight Included','4 Star Stay / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('London')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=900" alt="">
+      <div class="card-content">
+        <h3>Egypt</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Egypt','$499','Flights Included','Desert Resort / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Egypt')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1529260830199-42c24126f198?w=900" alt="">
+      <div class="card-content">
+        <h3>Rome</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Rome','$550','Flight Included','Hotel / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Rome')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=900" alt="">
+      <div class="card-content">
+        <h3>Tokyo</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Tokyo','$850','Flights Included','Luxury Stay / 5 Nights')">View Plans</button>
+          <button onclick="openBooking('Tokyo')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=900" alt="">
+      <div class="card-content">
+        <h3>Switzerland</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Switzerland','$999','Flights Included','Mountain Resort / 5 Nights')">View Plans</button>
+          <button onclick="openBooking('Switzerland')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 9 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?w=900" alt="">
+      <div class="card-content">
+        <h3>Maldives</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Maldives','$899','Flight Included','Water Villa / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Maldives')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 10 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?w=900" alt="">
+      <div class="card-content">
+        <h3>Goa</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Goa','$199','Flight Included','Beach Hotel / 3 Nights')">View Plans</button>
+          <button onclick="openBooking('Goa')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 11 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=900" alt="">
+      <div class="card-content">
+        <h3>Dubai</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Dubai','$650','Flights Included','5 Star Hotel / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Dubai')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 12 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=900" alt="">
+      <div class="card-content">
+        <h3>Andaman</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Andaman','$299','Flights Included','Resort / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Andaman')">Book</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 13 -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?w=900" alt="">
+      <div class="card-content">
+        <h3>Amsterdam</h3>
+        <div class="btn-group">
+          <button onclick="showPlan('Amsterdam','$699','Flights Included','Canal Hotel / 4 Nights')">View Plans</button>
+          <button onclick="openBooking('Amsterdam')">Book</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PLAN POPUP -->
+<div class="popup" id="planPopup">
+  <div class="popup-box">
+    <span class="close" onclick="closePlan()">&times;</span>
+    <h2 id="planTitle"></h2>
+    <p id="planPrice"></p>
+    <p id="planFlight"></p>
+    <p id="planStay"></p>
+    <button onclick="openBookingFromPopup()">Book Now</button>
+  </div>
+</div>
+
+
+<!-- BOOKING FORM -->
+<div class="popup" id="bookingPopup">
+  <div class="popup-box">
+    <span class="close" onclick="closeBooking()">&times;</span>
+    <h2>Travel Booking Form</h2>
+
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="number" placeholder="Phone Number" required>
+      <input type="text" id="destinationName" placeholder="Destination">
+      <input type="date" required>
+      <input type="number" placeholder="Persons" required>
+      <button type="submit">Submit Booking</button>
+    </form>
+
+  </div>
+</div>
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>We are always ready to help your next journey</p>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-box">
+            <h3>WanderVista</h3>
+            <p>Your trusted travel partner for luxury trips, affordable tours and unforgettable experiences.</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Email</h3>
+            <p>support@WanderVista.com</p>
+            <p>booking@WanderVista.com</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Phone</h3>
+            <p>+91 98765 43210</p>
+            <p>+91 91234 56789</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>Follow Us</h3>
+            <p>Instagram : @WanderVista</p>
+            <p>Twitter : @WanderVistaofficial</p>
+            <p>Facebook : WanderVista</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 WanderVista. All Rights Reserved | Designed for Travel Lovers</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
